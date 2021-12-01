@@ -1,2 +1,6 @@
 #include "utils.h"
-int main() {}
+#include "main.cpp"
+int main() 
+{
+    
+}
