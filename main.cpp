@@ -1,34 +1,41 @@
 #include <iostream>
-#include <string>
 #include <cstdlib>
-help me god free  me from this class
+#include <string>
+
+using std::string;
+
 int value;
-Card deck[];
+string suites[] = {"Hearts", "Clubs", "Spades", "Diamonds"};
+
 enum Suit
 {
     Hearts, Clubs, Spades, Diamonds
 };
 
-void Card(enum Suit, int number)
+
+struct Card
 {
-           
-}
+    string suit;
+    int value;
+};
+
+Card deck[52];
 
 void SetUp()
 {
-    Player player = new Player();
-    Dealer dealer = new Dealer();
-
+    
     for (int i = 0; i < 52; i++)
     { 
-        for each (Suit)
-         {
-            for (int j = 0; j < 13; j++)
+        for (int j = 0; j < 4; j++)
+        {
+            for(int l = 0; l < 13; l++)
             {
-                if 
-                deck[i] = new Card (Suit, j);
+                deck[i].suit = suites[j];
+                deck[i].value = l;
             }
+            
         }
+        
     }
     
 }
